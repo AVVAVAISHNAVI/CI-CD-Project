@@ -1,19 +1,19 @@
-version: 0.1  
+version: 0.2
 
 phases:
   install:
-      commands:
-        - echo Installing NGINX
-        - sudo apt-get update
-        - sudo apt-get install nginx -y
+    commands:
+      - echo "Installing dependencies..."
   build:
-      commands:
-        - echo Build started `date`
-        - cp index.html /var/www/html/
+    commands:
+      - echo "Build started on $(date)"
+      - echo "No actual build needed for static HTML"
   post_build:
-      commands:
-        - echo Configuring NGINX
+    commands:
+      - echo "Build completed successfully on $(date)"
 
 artifacts:
-    files:
-      - '**/*'
+  files:
+    - index.html
+    - appspec.yml
+    - scripts/**/*
