@@ -1,16 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AWS DEVOPS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avva Vaishnavi - DevOps Engineer</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <style>
+    /* Reset & Fonts */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* Card Container */
+    .profile-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 40px;
+      width: 90%;
+      max-width: 600px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      animation: fadeIn 2s ease forwards;
+    }
+
+    /* Profile Avatar */
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-bottom: 20px;
+      animation: bounce 2s infinite;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+      background: linear-gradient(45deg, #ff6a00, #ee0979);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h2 {
+      font-weight: 400;
+      color: #f0f0f0;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      color: #e0e0e0;
+    }
+
+    /* Buttons */
+    .btn {
+      padding: 12px 25px;
+      margin: 5px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      background: linear-gradient(45deg, #ff512f, #dd2476);
+      color: #fff;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    /* Social Links */
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      color: #fff;
+      font-size: 1.5em;
+      transition: all 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #ffeb3b;
+      transform: scale(1.2);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+  </style>
+  <!-- Font Awesome for social icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>MY DEMO APP FOR AWS DEVOPS</h1>
-    <h3>Built using CodePipeline</h3>
-    <h2>GITHUB <i>https://github.com/AVVAVAISHNAVI</i></h2>
+  <div class="profile-card">
+    <img src="https://avatars.githubusercontent.com/u/583231?v=4" alt="Avva Vaishnavi" class="avatar">
+    <h1>Avva Vaishnavi</h1>
+    <h2>DevOps Engineer</h2>
+    <p>
+      Passionate about automating, building, and deploying scalable applications on AWS.  
+      Lover of CI/CD, containers, cloud, and cutting-edge DevOps technologies.
+    </p>
+    <button class="btn">View Projects</button>
+    <button class="btn">Contact Me</button>
+
+    <div class="social-links">
+      <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
 </body>
-
 </html>
-
